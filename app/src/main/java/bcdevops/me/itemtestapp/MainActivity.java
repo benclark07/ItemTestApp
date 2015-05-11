@@ -2,6 +2,7 @@ package bcdevops.me.itemtestapp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -50,8 +51,10 @@ public class MainActivity extends Activity {
         mExtraMaterial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(mainActivity, ExtraMaterialActivity.class);
-//                startActivity(intent);
+                String url = "https://www.youtube.com/watch?v=nIqEXwL2wI8";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
             }
         });
     }

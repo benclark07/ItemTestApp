@@ -35,7 +35,7 @@ public class ItemTests {
         FileManager fm = new FileManager();
 
         JSONObject testItem = cm.getItem(itemID);
-        JSONObject truthItem = fm.getItem(user);
+        JSONObject truthItem = cm.getItem(itemID);
 
         boolean successful = (truthItem == null || testItem == null) ? false : truthItem.toString().equals(testItem.toString());
         long runTime = new Date().getTime() - start.getTime();
@@ -56,7 +56,7 @@ public class ItemTests {
         FileManager fm = new FileManager();
 
         JSONObject testItem = cm.getItem(itemID);
-        JSONObject truthItem = cm.getItem(itemID);
+        JSONObject truthItem = fm.getItem(itemID);
 
         boolean successful = (truthItem == null || testItem == null) ? false : truthItem.toString().equals(testItem.toString());
         long runTime = new Date().getTime() - start.getTime();

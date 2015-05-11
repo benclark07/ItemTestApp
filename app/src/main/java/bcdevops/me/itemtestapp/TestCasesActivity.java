@@ -2,15 +2,12 @@ package bcdevops.me.itemtestapp;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
-import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -78,23 +75,6 @@ public class TestCasesActivity extends Activity {
         TestCasesListAdapter adapter = new TestCasesListAdapter(this);
         ListView list = (ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
-    }
-    private void startLoad(){
-        setEnabled(false);
-        loading.setVisibility(View.VISIBLE);
-    }
-    private void endLoad(){
-        setEnabled(true);
-        loading.setVisibility(View.GONE);
-    }
-    private void setEnabled(boolean enabled){
-        TableLayout layout = (TableLayout) findViewById(R.id.test_table_layout);
-        for (int i = 0; i < layout.getChildCount(); i++) {
-            View child = layout.getChildAt(i);
-
-            if(child.getId() != R.id.loading)
-                child.setEnabled(enabled);
-        }
     }
     private void setToggles(){
         switch(mToggles){
