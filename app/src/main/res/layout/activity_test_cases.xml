@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="bcdevops.me.itemtestapp.TestCasesActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mp_background">
+
+    <TableLayout
+        android:id="@+id/test_table_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <TextView
+                android:text="@string/tc_title"
+                android:textSize="@dimen/tc_text_header"
+                android:textColor="@color/mp_text"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ToggleButton
+                android:id="@+id/item_tests_toggle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/icon_background"
+                android:textSize="11sp"
+                android:textColor="@color/mp_text"
+                android:textOff="@string/tc_toggle_items"
+                android:textOn="@string/tc_toggle_items_selected"
+                android:onClick="ToggleHandlerItems"
+                android:layout_weight="1"
+                android:layout_marginEnd="3dp"/>
+
+            <ToggleButton
+                android:id="@+id/item_set_tests_toggle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/icon_background"
+                android:textSize="11sp"
+                android:textColor="@color/mp_text"
+                android:textOff="@string/tc_toggle_item_sets"
+                android:textOn="@string/tc_toggle_item_sets_selected"
+                android:onClick="ToggleHandlerSets"
+                android:layout_weight="1"
+                android:layout_marginEnd="3dp"/>
+
+            <ToggleButton
+                android:id="@+id/all_toggle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/icon_background"
+                android:textSize="11sp"
+                android:textColor="@color/mp_text"
+                android:textOff="@string/tc_toggle_all"
+                android:textOn="@string/tc_toggle_all_selected"
+                android:onClick="ToggleHandlerAll"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:gravity="start"
+            android:layout_weight="6">
+
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/tc_row_margin">
+
+            </ListView>
+        </TableRow>
+    </TableLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:visibility="invisible"
+        android:minHeight="100sp"
+        android:minWidth="100sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true" />
+</RelativeLayout>

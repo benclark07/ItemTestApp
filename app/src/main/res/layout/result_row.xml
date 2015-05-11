@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tc_row_border">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/result_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/tc_row_margin"
+            android:background="@drawable/icon_background"/>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <!-- Subject Heading -->
+            <TextView
+                android:id="@+id/test_name"
+                android:text="TEST"
+                android:textSize="@dimen/tc_text_header"
+                android:textColor="@color/result_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/message"
+                android:text="TEST"
+                android:textSize="@dimen/tc_grid_message"
+                android:textColor="@color/result_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/test_name"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/error_count"
+                android:text="TEST"
+                android:textSize="@dimen/tc_grid_error_count"
+                android:textColor="@color/result_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message"
+                android:layout_marginTop="1dp"
+                android:maxLines="3"/>
+        </RelativeLayout>
+    </TableRow>
+</TableLayout>

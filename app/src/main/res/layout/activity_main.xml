@@ -1,0 +1,74 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/mp_background">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:text="@string/mp_title"
+            android:textSize="60sp"
+            android:textColor="@color/mp_text"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/mp_testCase_row"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:text="@string/testCases"
+            android:textSize="@dimen/mp_text_size"
+            android:textColor="@color/mp_text"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/mp_diagrams_row"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:text="@string/diagrams"
+            android:textSize="@dimen/mp_text_size"
+            android:textColor="@color/mp_text"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/mp_youtube_demo_row"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:text="@string/em_youtube_demo"
+            android:textSize="@dimen/mp_text_size"
+            android:textColor="@color/mp_text"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center"/>
+    </TableRow>
+</TableLayout>

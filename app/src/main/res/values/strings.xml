@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Item Test Suite</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--  Titles  -->
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_test_cases">Test Cases</string>
+    <string name="title_activity_diagrams">Diagrams</string>
+    <string name="title_activity_thoughts">Thoughts</string>
+
+    <!--  Main Activity  -->
+    <string name="mp_title">Testing\nDemo</string>
+    <string name="extraMaterial">Extra Material</string>
+    <string name="testCases">Test Cases</string>
+    <string name="diagrams">Diagrams</string>
+
+    <!--  Test Cases Activity -->
+    <string name="tc_title">Tests by Category</string>
+    <string name="tc_toggle_items">Item Tests</string>
+    <string name="tc_toggle_item_sets">Item Set Tests</string>
+    <string name="tc_toggle_all">All Tests</string>
+    <string name="tc_toggle_items_selected">--Item Tests--</string>
+    <string name="tc_toggle_item_sets_selected">--Item Set Tests--</string>
+    <string name="tc_toggle_all_selected">--All Tests--</string>
+
+    <!-- Extra Materials Activity -->
+    <string name="em_youtube_demo">YouTube App Demo</string>
+    <string name="em_diagrams">Diagrams</string>
+
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--
+                Activities
+    -->
+
+    <!-- Main -->
+    <dimen name="mp_text_size">30sp</dimen>
+
+    <!-- TestCases -->
+    <dimen name="tc_text_header">15sp</dimen>
+    <dimen name="tc_grid_error_count">10sp</dimen>
+    <dimen name="tc_grid_message">12sp</dimen>
+    <dimen name="tc_row_margin">5dp</dimen>
+
+</resources>
